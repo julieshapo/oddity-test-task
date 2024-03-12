@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,6 +7,100 @@
     <title>Vite App</title>
   </head>
   <body>
+    <header class="header">
+      <nav class="site-nav">
+        <ul class="site-nav-list">
+          <li class="site-nav-item">
+            <a class="site-nav-link" href="">Gmail</a>
+          </li>
+          <li class="site-nav-item">
+            <a class="site-nav-link" href="">Зображення</a>
+          </li>
+          <li class="site-nav-item">
+            <button class="site-nav-menu-btn" type="button">
+              <svg class="menu-icon" width="16" height="16">
+                <use href="/svg/sprite.svg#icon-dots-menu"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <button class="auth-btn" type="button">Увійти</button>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="section-title visually-hidden">Пошукова система Google</h1>
+          <svg>
+            <use href="/svg/sprite.svg#icon-google"></use>
+          </svg>
+          <form
+            class="search-form"
+            action="https://www.google.com/search"
+            method="GET"
+          >
+            <div class="search-input-wrap">
+              <label for="search">
+                <svg class="search-icon" width="32" height="32">
+                  <use href="/svg/sprite.svg#icon-search"></use>
+                </svg>
+              </label>
+              <input
+                class="search-input"
+                type="text"
+                id="search"
+                name="search-input"
+                required
+                autofocus
+              />
+              <div>
+                <button class="search-input-btn" type="button">
+                  <svg class="search-input-icon" width="32" height="32">
+                    <use href="/svg/sprite.svg#icon-google-keyboard"></use>
+                  </svg>
+                </button>
+                <button class="search-input-btn" type="button">
+                  <a href="">
+                    <svg class="search-input-icon" width="32" height="32">
+                      <use href="/svg/sprite.svg#icon-google-mic"></use>
+                    </svg>
+                  </a>
+                </button>
+                <button class="search-input-btn" type="button">
+                  <svg class="search-input-icon" width="32" height="32">
+                    <use href="/svg/sprite.svg#icon-google-camera"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="search-buttons-wrap">
+              <button class="search-button" type="submit">Пошук Google</button>
+              <button class="search-button" type="button">
+                Мені пощастить
+              </button>
+            </div>
+            <p class="section-text">Мова Google: <a href="">English</a></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer-text">Україна</p>
+      <div class="footer-link-wrap">
+        <ul class="footer-link-list">
+          <li class="footer-link-item"><a href="">Про Google</a></li>
+          <li class="footer-link-item"><a href="">Реклама</a></li>
+          <li class="footer-link-item"><a href="">Для бізнесу</a></li>
+          <li class="footer-link-item"><a href="">Як працює Пошук</a></li>
+        </ul>
+        <ul class="footer-link-list">
+          <li class="footer-link-item"><a href="">Конфіденційність</a></li>
+          <li class="footer-link-item"><a href="">Умови</a></li>
+          <li class="footer-link-item"><a href="">Налаштування</a></li>
+        </ul>
+      </div>
+    </footer>
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
   </body>

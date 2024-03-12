@@ -1,96 +1,174 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+/* -------------- COMMON & RESET ---------------- */
 
 body {
+  /* background-color: var(--header-bg); */
+  color: #202124;
+
+  font-family: Roboto, arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+h1,
+p {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+a {
+  text-decoration: none;
+}
+
+.link {
+  color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* -------------- HEADER ---------------- */
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+
+  height: 48px;
+}
+.site-nav {
+}
+.site-nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.site-nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.site-nav-link {
+}
+.site-nav-menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  border-color: transparent;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.site-nav-menu-btn:hover,
+.site-nav-menu-btn:focus {
+  background-color: rgba(60, 64, 67, 0.08);
+}
+
+.menu-icon {
+  fill: #5f6368;
+}
+.auth-btn {
+  padding: 6px 23px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+
+  font-size: 14px;
+
+  background-color: rgb(26, 115, 232);
+  color: rgb(255, 255, 255);
+}
+
+/* -------------- MAIN ---------------- */
+
+.section {
+  padding: 198px;
+  text-align: center;
+}
+
+.search-form {
+}
+
+.search-input-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  display: flex;
+  z-index: 3;
+  position: relative;
+  min-height: 44px;
+  background: #fff;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  border-radius: 24px;
+  margin: 0 auto;
+  width: 638px;
+  width: auto;
+  max-width: 584px;
+  cursor: pointer;
+}
+
+.search-input-wrap:hover,
+.search-input-wrap:focus {
+  box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.search-icon {
+}
+.search-input {
+}
+.search-input-btn {
+}
+.search-input-icon {
+}
+.search-buttons-wrap {
+}
+.search-button {
+}
+.section-text {
+}
+
+/* -------------- FOOTER ---------------- */
+
+.footer {
+}
+.footer-text {
+}
+.footer-link-wrap {
+}
+.footer-link-list {
+}
+.footer-link-item {
 }
