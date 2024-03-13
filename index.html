@@ -2,19 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Oddity Test Task</title>
   </head>
   <body>
     <header class="header">
       <nav class="site-nav">
         <ul class="site-nav-list">
           <li class="site-nav-item">
-            <a class="site-nav-link" href="">Gmail</a>
+            <a class="site-nav-link link" href="">Gmail</a>
           </li>
           <li class="site-nav-item">
-            <a class="site-nav-link" href="">Зображення</a>
+            <a class="site-nav-link link" href="">Зображення</a>
           </li>
           <li class="site-nav-item">
             <button class="site-nav-menu-btn" type="button">
@@ -27,12 +26,15 @@
       </nav>
       <button class="auth-btn" type="button">Увійти</button>
     </header>
-    <main>
+    <main class="main">
       <section class="section">
         <div class="container">
           <h1 class="section-title visually-hidden">Пошукова система Google</h1>
-          <svg>
+          <svg class="google-logo">
             <use href="/svg/sprite.svg#icon-google"></use>
+          </svg>
+          <svg class="oddity-logo visually-hidden">
+            <use href="/svg/sprite.svg#icon-oddity-logo"></use>
           </svg>
           <form
             class="search-form"
@@ -40,9 +42,9 @@
             method="GET"
           >
             <div class="search-input-wrap">
-              <label for="search">
-                <svg class="search-icon" width="32" height="32">
-                  <use href="/svg/sprite.svg#icon-search"></use>
+              <label for="search" class="search-label">
+                <svg class="search-icon" width="24" height="24">
+                  <use href="/svg/sprite.svg#icon-search2"></use>
                 </svg>
               </label>
               <input
@@ -53,9 +55,9 @@
                 required
                 autofocus
               />
-              <div>
+              <div class="search-input-btn-wrap">
                 <button class="search-input-btn" type="button">
-                  <svg class="search-input-icon" width="32" height="32">
+                  <svg class="search-keyboard-icon" width="20" height="24">
                     <use href="/svg/sprite.svg#icon-google-keyboard"></use>
                   </svg>
                 </button>
@@ -67,7 +69,7 @@
                   </a>
                 </button>
                 <button class="search-input-btn" type="button">
-                  <svg class="search-input-icon" width="32" height="32">
+                  <svg class="search-input-icon" width="26" height="26">
                     <use href="/svg/sprite.svg#icon-google-camera"></use>
                   </svg>
                 </button>
@@ -76,7 +78,7 @@
 
             <div class="search-buttons-wrap">
               <button class="search-button" type="submit">Пошук Google</button>
-              <button class="search-button" type="button">
+              <button class="search-button happy-btn" type="button">
                 Мені пощастить
               </button>
             </div>
@@ -89,19 +91,28 @@
       <p class="footer-text">Україна</p>
       <div class="footer-link-wrap">
         <ul class="footer-link-list">
-          <li class="footer-link-item"><a href="">Про Google</a></li>
-          <li class="footer-link-item"><a href="">Реклама</a></li>
-          <li class="footer-link-item"><a href="">Для бізнесу</a></li>
-          <li class="footer-link-item"><a href="">Як працює Пошук</a></li>
+          <li class="footer-link-item">
+            <a class="link" href="">Про Google</a>
+          </li>
+          <li class="footer-link-item"><a class="link" href="">Реклама</a></li>
+          <li class="footer-link-item">
+            <a class="link" href="">Для бізнесу</a>
+          </li>
+          <li class="footer-link-item">
+            <a class="link" href="">Як працює Пошук</a>
+          </li>
         </ul>
         <ul class="footer-link-list">
-          <li class="footer-link-item"><a href="">Конфіденційність</a></li>
-          <li class="footer-link-item"><a href="">Умови</a></li>
-          <li class="footer-link-item"><a href="">Налаштування</a></li>
+          <li class="footer-link-item">
+            <a class="link" href="">Конфіденційність</a>
+          </li>
+          <li class="footer-link-item"><a class="link" href="">Умови</a></li>
+          <li class="footer-link-item">
+            <a class="link" href="">Налаштування</a>
+          </li>
         </ul>
       </div>
     </footer>
-    <div id="app"></div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
