@@ -1,5 +1,3 @@
-import "./style.css";
-
 const btn = document.querySelector(".happy-btn");
 
 const logoToggle = () => {
